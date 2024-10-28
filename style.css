@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.font-title {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.5px 0.5px 30px #00000058;
+  }
+  
+
+.bg-banner {
+    min-height: 1000px;
+    background-image: url(./assets/images/banner1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.bg-runner{
+    margin-top: 20px;
+    height: 20em;
+    width: 100%;
+    background-image: url(assets/images/annaClaudia3.webp);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:768px) {
+    .bg-banner {
+        min-height: 500px;
+        background-size: auto 100%;
+        background-position: right;
+    }
+
+    .bg-runner{
+        width: 50%;
+        height: 25em;
+        background-size: cover;
+        background-position: right;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .bg-banner {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .bg-banner {
+        min-height: 700px;
+    }
+
+    .bg-runner{
+        height: 30em;
+        background-position: top right;
+    }
+}
+
+@media screen and (min-width:1536px) {
+    .bg-banner {
+        min-height: 800px;
+    }
+
+    .bg-runner{
+        height: 35em;
+        background-position: top right;
+    }
+}
+
+.shadow-slider {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 30px 50px -20px, rgba(0, 0, 0, 0.3) 0px 15px 20px -15px;
+}
+
+li::before {
+    content: "\2713"; /* Você pode usar o código Unicode para o ícone */
+    color: #fff; /* Cor do ícone */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
